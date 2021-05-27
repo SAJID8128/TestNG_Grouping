@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="GroupingTest1">
+
+		<groups>
+			<define name="Group2">
+				<include name="boundary value"></include>
+				<include name="equivalence partitioning"></include>
+			</define>
+			<run>
+				<include name="Group2"></include>
+			</run>
+		</groups>
+
+		<classes>
+			<class name="groupingTests.GroupingTest2" />
+		</classes>
+		
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->

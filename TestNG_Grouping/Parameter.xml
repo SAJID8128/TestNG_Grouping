@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parameter Suite">
+
+	<test name="Parameter Test">
+	
+		<parameter name="Login" value="login test"></parameter>
+		<parameter name="Product" value="product test"></parameter>
+		<parameter name="Feature" value="feature test"></parameter>
+		<parameter name="Checkout" value="checkout test"></parameter>
+		<parameter name="Track" value="tracking test"></parameter>
+		
+		<classes>
+			<class name="groupingTests.ParameterTest" />
+		</classes>
+		
+	</test> 
+	
+</suite>
